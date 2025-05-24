@@ -118,8 +118,7 @@ header .textos-header{
 }
 
 .servicio-ind:nth-child(n+4) {
-    flex: 1 1 calc(45% - 40px); /* Para que los 2 últimos ocupen más espacio */
-    max-width: calc(45% - 40px);
+    width: calc(50% - 20px);
 }
 
 .servicio-ind img{
