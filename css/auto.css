@@ -104,13 +104,22 @@ header .textos-header{
 
 .servicio-cont{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
 }
 
 .servicio-ind{
-    width: 28%;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);;
     text-align: center;
+    box-sizing: border-box;
+}
+
+.servicio-ind:nth-child(n+4) {
+    flex: 1 1 calc(45% - 40px); /* Para que los 2 últimos ocupen más espacio */
+    max-width: calc(45% - 40px);
 }
 
 .servicio-ind img{
