@@ -210,27 +210,24 @@ footer{
     /* servicios */
 
     .servicio-cont{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
     }
-    
+
     .servicio-ind{
-        flex: 1 1 calc(33.333% - 40px);
-        max-width: calc(33.333% - 40px);;
+        width: 100%;
         text-align: center;
-        box-sizing: border-box;
     }
-    
-    .servicio-ind:nth-child(n+4) {
-        width: calc(50% - 20px);
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
     }
 
     .servicio-ind img{
-        width: 500px;
-        height: 500px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
     }
     
     .servicio-ind h2{
