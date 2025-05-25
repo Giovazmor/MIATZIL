@@ -210,12 +210,14 @@ footer{
     /* servicios */
 
     .servicio-cont{
+        display: flex;
         justify-content: center;
-        flex-direction: column;
+        gap: 40px;
+        flex-wrap: wrap;
     }
 
     .servicio-ind{
-        width: 100%;
+        width: 220px;
         text-align: center;
     }
 
@@ -224,15 +226,20 @@ footer{
     }
 
     .servicio-ind img{
-        width: 200px !important;
-        height: 200px !important;
-        object-fit: cover !important;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
         border-radius: 10px;
     }
     
-    .servicio-ind h2{
-        margin: 10px 0;
+    .lista {
+        width: 80%;              /* Puedes ajustar según tu diseño */
+        max-width: 800px;
+        margin: 0 auto;          /* Centra el bloque horizontalmente */
+        text-align: justify;     /* Justifica el texto dentro */
+        list-style-position: inside; /* Viñetas alineadas al texto */
     }
+    
 }
 
 @media screen and (max-width:500px){
