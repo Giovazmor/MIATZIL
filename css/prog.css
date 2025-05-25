@@ -210,17 +210,22 @@ footer{
     /* servicios */
 
     .servicio-cont{
-        justify-content: center;
-        flex-direction: column;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 20px;
     }
-
+    
     .servicio-ind{
-        width: 100%;
+        flex: 1 1 calc(33.333% - 40px);
+        max-width: calc(33.333% - 40px);;
         text-align: center;
+        box-sizing: border-box;
     }
-
-    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-        margin-bottom: 60px;
+    
+    .servicio-ind:nth-child(n+4) {
+        width: calc(50% - 20px);
     }
 
     .servicio-ind img{
