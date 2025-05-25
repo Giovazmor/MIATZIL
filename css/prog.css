@@ -228,13 +228,9 @@ footer{
         height: 200px;
     }
     
-    .servicio-ind h3{
+    .servicio-ind h2{
         margin: 10px 0;
     }
-    
-    .servicio-ind p{
-        font-weight: 300;
-        text-align: justify;
 }
 
 @media screen and (max-width:500px){
