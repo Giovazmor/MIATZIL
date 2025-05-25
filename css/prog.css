@@ -226,18 +226,21 @@ footer{
     }
 
     .servicio-ind img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
+        object-position: center;
         border-radius: 10px;
+        display: block;
+        margin: 0 auto;
     }
     
     .lista {
-        width: 80%;              /* Puedes ajustar según tu diseño */
+        width: 80%;              
         max-width: 800px;
-        margin: 0 auto;          /* Centra el bloque horizontalmente */
-        text-align: justify;     /* Justifica el texto dentro */
-        list-style-position: inside; /* Viñetas alineadas al texto */
+        margin: 0 auto;          
+        text-align: justify;     
+        list-style-position: inside; 
     }
     
 }
