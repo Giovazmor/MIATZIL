@@ -225,15 +225,16 @@ footer{
         margin-bottom: 60px;
     }
 
-    .servicio-ind img{
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 10px;
+    .servicio-ind img {
+        width: 250px;              /* Tamaño uniforme */
+        height: 250px;             /* Tamaño uniforme */
+        object-fit: cover;         /* Recorta la imagen para que llene el contenedor */
+        object-position: center;   /* Centra la parte visible */
+        border-radius: 10px;       /* Opcional: bordes redondeados */
         display: block;
         margin: 0 auto;
     }
+    
     
     .lista {
         width: 80%;              
