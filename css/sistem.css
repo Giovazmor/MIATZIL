@@ -37,11 +37,12 @@ header {
     height: 400px;
     background: #ffffff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(249, 79%, 50%, 0.718), hsla(246, 68%, 28%, 0.664))/*, url(../img/image5.png)*/;
+    background: -webkit-linear-gradient(to right, hsla(249, 79%, 50%, 0.718), hsla(246, 69%, 49%, 0.664)), url(../img/grupo_banner.png);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(249, 79%, 50%, 0.718), hsla(246, 68%, 28%, 0.664))/*, url(../img/image5.png)*/;
+    background: linear-gradient(to right, hsla(232.6, 100%, 40%, 0.718), hsla(232.6, 100%, 40%, 0.713)), url(../img/grupo_banner.png);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
 }
@@ -89,7 +90,7 @@ header .textos-header{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: auto;
+    height: 50px;
     z-index: 1;
 }
 
@@ -104,17 +105,26 @@ header .textos-header{
 
 .servicio-cont{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
 }
 
 .servicio-ind{
-    width: 28%;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);;
     text-align: center;
+    box-sizing: border-box;
+}
+
+.servicio-ind:nth-child(n+4) {
+    width: calc(50% - 20px);
 }
 
 .servicio-ind img{
-    width: 90%;
+    width: 300px;
+    height: 200px;
 }
 
 .servicio-ind h3{
